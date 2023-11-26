@@ -1,4 +1,4 @@
-## ben_ayed_mehdi_s_application4
+# SmartSMS - User Interface
 
 Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
 
@@ -16,9 +16,9 @@ Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
 
 ## Running in dev environment
 
-1.  `cd YOUR_APPLICATION`
-2.  `npm install`
-3.  `npm start`
+1. `cd YOUR_APPLICATION`
+2. `npm install`
+3. `npm start`
 
 ## .env file
 
@@ -26,7 +26,7 @@ This file contains various environment variables that you can configure.
 
 ## Folder Structure
 
-```
+```console
  .
  ├── package.json
  ├── postcss.config.js
@@ -69,16 +69,16 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
+Builds the app for production to the `build` folder.
 
 ### `npm run eject`
 
@@ -117,7 +117,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <a href="https://twitter.com/dhiwise"><img src="https://user-images.githubusercontent.com/35039342/55471524-8e24cb00-5627-11e9-9389-58f3d4419153.png" width="60" alt="DhiWise Twitter"></a>
 
 <a href="https://www.youtube.com/c/DhiWise"><img src="https://cdn.vox-cdn.com/thumbor/0kpe316UpZWk53iw3bOLoJfF6hI=/0x0:1680x1050/1400x1400/filters:focal(706x391:974x659):format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/56414325/YTLogo_old_new_animation.0.gif" width="60" alt="DhiWise YouTube"></a>
-
-<a href=https://discord.gg/UPhCetBkVu"><img src="https://user-images.githubusercontent.com/47489894/183043664-b01aac56-0372-458a-bde9-3f2a6bded21b.png" width="60" alt="DhiWise Discord"></a>
 
 <a href="https://docs.dhiwise.com/docs/react/intro"><img src="https://global-uploads.webflow.com/618e36726d3c0f19c9284e56/62383865d5477f2e4f6b6e2e_main-monogram-p-500.png" width="60" alt="DhiWise Documentation"></a>
