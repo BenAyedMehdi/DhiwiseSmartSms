@@ -2,7 +2,7 @@ import React from "react";
 
 import { Img, Text } from "components";
 
-const DemoPageRowtail = (props) => {
+const ReplySmsGrey = (props) => {
   return (
     <>
       <div className={props.className}>
@@ -12,7 +12,7 @@ const DemoPageRowtail = (props) => {
             className="leading-[22.00px] max-w-[230px] md:max-w-full text-[17px] text-black-900 tracking-[-0.41px]"
             size="txtPoppinsRegular17Black900"
           >
-            {props?.messagetext}
+            {props.messagetext}
           </Text>
         </div>
       </div>
@@ -20,9 +20,5 @@ const DemoPageRowtail = (props) => {
   );
 };
 
-DemoPageRowtail.defaultProps = {
-  messagetext:
-    "Absolutely! Surviving in the wilderness without internet requires essential skills and preparation. Here are some key tips",
-};
 
-export default DemoPageRowtail;
+export default ReplySmsGrey;

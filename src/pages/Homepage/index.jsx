@@ -2,11 +2,20 @@ import React from "react";
 
 
 import { Button, Img, Line, Text } from "components";
+import apiCalls from "apiCalls";
 
 import Topbar from "components/Topbar";
 import Navbar from "components/Navbar";
 
 const HomepagePage = () => {
+
+  const handleNewConversation = async (e) => {
+    e.preventDefault();
+    navigate("/demopage");
+
+    const response = await apiCalls.createConversation();
+    console.log(response);
+  };
 
   return (
     <>
