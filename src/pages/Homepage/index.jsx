@@ -3,12 +3,12 @@ import React from "react";
 
 import { Button, Img, Line, Text } from "components";
 import apiCalls from "apiCalls";
-
+import { useNavigate } from "react-router-dom";
 import Topbar from "components/Topbar";
 import Navbar from "components/Navbar";
 
 const HomepagePage = () => {
-
+  const navigate = useNavigate();
   const handleNewConversation = async (e) => {
     e.preventDefault();
     navigate("/demopage");
