@@ -10,6 +10,7 @@ import DemoPageUserbar from "components/DemoPageUserbar";
 import apiCalls from "apiCalls";
 import MobileView from "components/new/MobileView";
 import useResponsive from "hooks/useResponsive";
+import Navbar from "components/Navbar";
 
 const DemoPagePage = () => {
   const isDesktop = useResponsive("up", "lg");
@@ -33,7 +34,22 @@ const DemoPagePage = () => {
   return (
     <>
       {!isDesktop ? (
-        <MobileView />
+        <>
+        <div className="bg-gradient  font-jost h-[1024px] mx-auto pb-3 pl-3 relative w-full">
+
+          <Button
+            className="common-pointer  bg-transparent cursor-pointer font-bold leading-[normal] left-[11%] min-w-[147px] md:text-3xl sm:text-[28px] text-[32px] text-center text-white-A700 top-[4%]"
+            onClick={() => navigate("/")}
+            size="xs"
+            >
+            SMSavvy.
+          </Button>
+          <div className=" flex flex-col md:gap-10 gap-[70px] items-start justify-start left-[11%] md:px-5 top-[34%] w-auto">
+            <Navbar />
+          </div>
+          <MobileView />
+            </div>
+        </>
       ) : (
         <>
           <div className="bg-gradient  font-jost h-[1024px] mx-auto pb-3 pl-3 relative w-full">
