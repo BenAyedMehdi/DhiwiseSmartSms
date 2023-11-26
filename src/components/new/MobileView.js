@@ -11,33 +11,58 @@ function MobileView() {
   const [typedMessage, setTypedMessage] = useState("");
   const [msgSent, setMsgSent] = useState(false);
   const [messages, setMessages] = useState([]);
-  const [message, setMessage] = useState({});
+  const [message, setMessage] = useState({});  
+  const [showComponent1, setShowComponent1] = useState(false);
+  const [showComponent2, setShowComponent2] = useState(false);
 
-  useEffect(async ()  => {
-    await getConversationMessages();
-  }, [message]);
+let MESSAGES = [];
+ /* useEffect( ()  => {
+    console.log("MESSAGES", messages)
+    setMessages(MESSAGES);
+    //await getConversationMessages();
+  }, [message]);*/
+  useEffect(() => {
 
+  }, []);
   const getConversationMessages = async () => {
     const conversation = await apiCalls.getConversationMessages();
     if (conversation !== undefined) {
-      setMessages(conversation);
+      setMessages(MESSAGES);
     }
   };
 
   const handleNewMessage = async (e) => {
     e.preventDefault();
+    setMsgSent(true);
+
     if (typedMessage === "") return;
+
     const newMessageSent = {
       messageContent: typedMessage,
       isReceived: true,
     };
     setMessages([...messages, newMessageSent]);
+    MESSAGES = [...MESSAGES, newMessageSent]
+
+    const receptionConfirmation = {
+      messageContent: "TelecomGPT received your message.\nGenerating a response...",
+      isReceived: false,
+    };
+    MESSAGES.push(receptionConfirmation);
+
+    const staticReply = {
+      messageContent: "Thank you for using TelecomGPT. This is a static reply.",
+      isReceived: false,
+    };
+    MESSAGES.push(staticReply);
+
+    setMessage(staticReply);
 
     const request = {
       conversationId: "5b02dbbf-3e9c-48d1-bf4c-8e66f61ebd3a",
       messageContent: typedMessage,
     };
-    const response = await apiCalls.sendMessage(request);
+    //const response = await apiCalls.sendMessage(request);
     setMessage(newMessageSent);
   };
 
@@ -65,7 +90,7 @@ function MobileView() {
           +123 123 123{" "}
         </Text>
 
-        <ConversationMessages messagesList={messages} />
+        <ConversationMessages showStatic={msgSent} messagesList={messages} />
 
         <div className="flex flex-row gap-[18px] h-[107px] md:h-auto items-center justify-start mt-[180px] p-2.5 w-[399px] sm:w-full">
           <div className="flex flex-col h-[43px] md:h-auto items-start justify-center w-[285px] sm:w-full">

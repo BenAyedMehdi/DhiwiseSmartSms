@@ -9,6 +9,7 @@ import Navbar from "components/Navbar";
 
 const HomepagePage = () => {
   const navigate = useNavigate();
+  
   const handleNewConversation = async (e) => {
     e.preventDefault();
     navigate("/demopage");
