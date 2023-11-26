@@ -1,8 +1,15 @@
 
-    @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+
+  .middle-button {
+    /* Add custom styles for the middle button */
+    @apply text-3xl
+  }
+}
 :root {
   --primary-color: #3e3e3e;
 }
