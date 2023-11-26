@@ -42,7 +42,7 @@ const DemoPagePage = () => {
             onClick={() => navigate("/")}
             size="xs"
             >
-            SMSavvy.
+            Smart SMS.
           </Button>
           <div className=" flex flex-col md:gap-10 gap-[70px] items-start justify-start left-[11%] md:px-5 top-[34%] w-auto">
             <Navbar />
