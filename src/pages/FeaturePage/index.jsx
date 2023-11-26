@@ -27,86 +27,67 @@ const FeaturePagePage = () => {
             <div className="bg-white-A700_19 flex flex-col h-[645px] md:h-auto items-start justify-start max-w-[873px] mr-[3px] md:px-10 sm:px-5 px-[82px] py-[61px] rounded-[24px] w-full">
               <div className="flex flex-col gap-[27px] items-start justify-start w-full">
                 <List
-                  className="sm:flex-col flex-row gap-[27px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center w-full"
+                  className="sm:flex-col flex-row gap-[27px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-3 justify-center w-full"
                   orientation="horizontal"
                 >
                   <div
                     className="bg-cover bg-no-repeat flex flex-1 flex-col md:gap-10 gap-[107px] h-[218px] items-center justify-end sm:ml-[0] p-7 sm:px-5 rounded-[24px] w-full"
                     style={{
-                      backgroundImage: "url('images/img_cardproject.png')",
+                      backgroundImage: "url('images/img_image1.png')",
                     }}
                   >
                     <Text
-                      className="mt-1.5 text-base text-center text-white-A700"
+                      className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                       size="txtJostRomanBold16"
                     >
-                      Title of project
+                      TelecomGPT
                     </Text>
                     <Text
                       className="text-base text-center text-white-A700"
                       size="txtJostRomanRegular16"
                     >
-                      Description goes here
+                      SMS-power AI to keep you connected even when you are offline
                     </Text>
                   </div>
                   <div
                     className="bg-cover bg-no-repeat flex flex-1 flex-col md:gap-10 gap-[107px] h-[218px] items-center justify-end sm:ml-[0] p-7 sm:px-5 rounded-[24px] w-full"
                     style={{
-                      backgroundImage: "url('images/img_cardproject.png')",
+                      backgroundImage: "url('images/img_image1.png')",
                     }}
                   >
                     <Text
-                      className="mt-1.5 text-base text-center text-white-A700"
+                      className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                       size="txtJostRomanBold16"
                     >
-                      Title of project
+                      QuizSMS
                     </Text>
                     <Text
                       className="text-base text-center text-white-A700"
                       size="txtJostRomanRegular16"
                     >
-                      Description goes here
+                      Quiz and other game to keep you entertained and informed
                     </Text>
                   </div>
                   <div
                     className="bg-cover bg-no-repeat flex flex-1 flex-col md:gap-10 gap-[107px] h-[218px] items-center justify-end sm:ml-[0] p-7 sm:px-5 rounded-[24px] w-full"
                     style={{
-                      backgroundImage: "url('images/img_cardproject.png')",
+                      backgroundImage: "url('images/img_image1.png')",
                     }}
                   >
                     <Text
-                      className="mt-1.5 text-base text-center text-white-A700"
+                      className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                       size="txtJostRomanBold16"
                     >
-                      Title of project
+                      AssistantGPT
                     </Text>
                     <Text
                       className="text-base text-center text-white-A700"
                       size="txtJostRomanRegular16"
                     >
-                      Description goes here
+                      AI- power assistant to help you with your questions and concerns
                     </Text>
                   </div>
                 </List>
-                <div
-                  className="bg-cover bg-no-repeat flex flex-col md:gap-10 gap-[107px] h-[218px] items-center justify-end p-7 sm:px-5 rounded-[24px] w-[218px]"
-                  style={{
-                    backgroundImage: "url('images/img_cardproject.png')",
-                  }}
-                >
-                  <Text
-                    className="mt-1.5 text-base text-center text-white-A700"
-                    size="txtJostRomanBold16"
-                  >
-                    Title of project
-                  </Text>
-                  <Text
-                    className="text-base text-center text-white-A700"
-                    size="txtJostRomanRegular16"
-                  >
-                    Description goes here
-                  </Text>
-                </div>
               </div>
             </div>
           </div>
